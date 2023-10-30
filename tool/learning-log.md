@@ -20,11 +20,8 @@ Project: **I am deciding to create a website for students to learn more about us
  I learned that even though you deleted the folder for your project, when we use `django-admin startproject projectName .`, we are able to create a project in our own directory right now. When you don't have a project inside your server or nothing inside the setting inside your project, when you run your server, it can cause multiple errors.
   * When you run `python manage.py runserver`, you are able to get a list of different next steps that you can run inside the server, such as `run-server`, `load data`, `changing data`, `shell`...etc.<br>
 
-Challenges: There are folders and files that contain the same name, that makes it confusing to which file we are editing in and how we can solve this issue.<br>
-Next steps: 
-
-
-
+**Challenges:** There are folders and files that contain the same name, that makes it confusing to which file we are editing in and how we can solve this issue.<br>
+**Next steps:** I would want to expand more in documentations and be more familiar in the different files that are created and why it was created and how I can use them to create a website for a project.<br>
 
 X/X/X:
 * Text
