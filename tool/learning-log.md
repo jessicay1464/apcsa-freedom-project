@@ -48,7 +48,7 @@ class Person(models.Model):
  * `id` [field](https://docs.djangoproject.com/en/4.2/topics/db/models/#automatic-primary-key-fields) is added automatically (can also be overridden)
  * `CREATE TABLE` --> backend database
  
-**Questions**: How can tables be relevant to a project that I am doing this year? How can I apply this 
+**Questions**: How can tables be relevant to a project that I am doing this year? How can I apply this to a project that I am making this year?
 
 
 
