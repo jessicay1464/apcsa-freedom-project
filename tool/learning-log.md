@@ -23,8 +23,33 @@ Project: **I am deciding to create a website for students to learn more about us
 **Challenges:** There are folders and files that contain the same name, that makes it confusing to which file we are editing in and how we can solve this issue.<br>
 **Next steps:** I would want to expand more in documentations and be more familiar in the different files that are created and why it was created and how I can use them to create a website for a project.<br>
 
-X/X/X:
-* Text
+10/26/23:
+* [Link](https://docs.djangoproject.com/en/4.2/) to the intro of documentations of how I can import Django to my browser.
+* Today I mainly went back to this link to  look at the starting lesson, which is the `model layer` part of Django.
+* I learned ...
+```python
+from django.db import models
+
+class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+```
+ * In this part of the code, the `first_name` and `last_name` are known as the fields of this model.
+ * Each field is specified as a class attribute, and each attribute maps to a data base column
+ * A database based of `PERSON` model. 
+ ```python
+ from django.db import models
+ class Person(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+ ```
+ * `A-HA MOMENTS:` I learned that when we use `max_length=30;` makes the input of the user a limit of 30 character.
+ * Based on the documentation, we use `myapp_person` because it is a [name](https://docs.djangoproject.com/en/4.2/ref/models/options/#table-names) for the table. (They can be overridden)
+ * `id` [field](https://docs.djangoproject.com/en/4.2/topics/db/models/#automatic-primary-key-fields) is added automatically (can also be overridden)
+ * `CREATE TABLE` --> backend database
+ 
+**Questions**: How can tables be relevant to a project that I am doing this year? How can I apply this 
+
 
 
 <!-- 
