@@ -24,16 +24,16 @@ class Person(models.Model):
 In this part of the code, the `first_name` and `last_name` are known as the fields of this model. This means that the user can only input a word that is at max 30 letters. This model is based of the call of the class `Person`. As we can also see, when we declare a new `var`, we don't need datatypes, however there are. And this would be my next steps in defining the different `types of variable` but also what is the difference between a variable declared and not declared.<br>
 I also learned about the different variables and syntaxs. Moreover, learning new a new computer-based language that is different from what we learn about `Javascript` and `Java`. From here, I learned about the basics of my code. For instance, when we want to comment out, we should use `#`. But also I learned that, in Python, we don't actually need the `variables` declared (although there are still different datatypes, as I went through the website and the exercises.
 
-### Source
- * [w3schools](https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1)
- * [DJango](https://www.djangoproject.com/)
- * [Mr.Mosh](https://www.youtube.com/watch?v=rHux0gMZ3Eg&t=2091s)
-
 ### EDP (Engineering Design Process)
 Currently, we are at the design process of **#1 Defining the problem.** Well, this year in APCSA, we aren't actually having a problem, but we are able to create the project that we are passionate about that we would want to learn and create with it. We were able to use the tools that we learn and tinker with to help us correspond with the topic that best fits us in advance. At first, I was thinking is using `Python/Django` and I did research about it. After that day, I was very confirmed with my tool that, I would want to use `Python/DJango` to help us create this interactive wesbite to help and inspire people into plain Javascript and using it to program my Freedom Project.
 
 ### Skills 
 Two main skills that I have overcame when I was tinkering and choosing my tool are `How to Read` and `Time Management`. At first, I would say `How to Read` because we would have to read through multiple documents and watch videos. In this case, `How to Read` would come to a huge role because we would have to be careful about what we are reading, making sure that we jot down notes that are important to us. But also, we can also learn baout the different parts and piece of code that we can throw into our `sandbox` and just freely tinker with it. This can help us make sure that we are learning different concepts. Also, I would say the idea of `Time Management` would also be very important because it is serious and important that we tinker our tool and updating our `leanring-log`, although we may be busy with other school work and the applications for college. This would be a huge mess if we didn't balance everything out. Therefore, I would say that `Time Management` would also be important. Overall, these are the two skills that I have accomplish when tinkering and choosing my tool.<br>
+
+### Sources
+ * [w3schools](https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1)
+ * [DJango](https://www.djangoproject.com/)
+ * [Mr.Mosh](https://www.youtube.com/watch?v=rHux0gMZ3Eg&t=2091s)<br>
 
 [Next](entry02.md)
 
