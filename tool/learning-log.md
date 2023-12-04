@@ -36,7 +36,7 @@ class Person(models.Model):
 ```
  * In this part of the code, the `first_name` and `last_name` are known as the fields of this model.
  * Each field is specified as a class attribute, and each attribute maps to a data base column
- * A database based of `PERSON` model. 
+ * A database based of `PERSON` model.
  ```python
  from django.db import models
  class Person(models.Model):
@@ -47,12 +47,18 @@ class Person(models.Model):
  * Based on the documentation, we use `myapp_person` because it is a [name](https://docs.djangoproject.com/en/4.2/ref/models/options/#table-names) for the table. (They can be overridden)
  * `id` [field](https://docs.djangoproject.com/en/4.2/topics/db/models/#automatic-primary-key-fields) is added automatically (can also be overridden)
  * `CREATE TABLE` --> backend database
- 
+
 **Questions**: How can tables be relevant to a project that I am doing this year? How can I apply this to a project that I am making this year?
 
+---
+
+11/27/23
+* I was able to take a make an attempt on installing Python into my chromebook server
+  * [Install] (https://www.youtube.com/watch?v=B_u38QwW6fc)
+  * Downloading Python into computer
 
 
-<!-- 
+<!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
