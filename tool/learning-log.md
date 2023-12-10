@@ -79,11 +79,26 @@ class Car(models.Model):
 ### 12/4/2023 - 12/10/2023: 
  * [replit tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
  * [python tutorial](https://docs.python.org/3/tutorial/index.html)
- * In this case, I learned to make an array inside the code that I was putting in replit file that is linked above. Below the link is another link. This is where I choose a lesson, and today, I chose Lesson 1.1 and started by copying and pasting code into my replit folder and run to see what it gives us. However 
-
- * I saw that when we are 
-
-https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_upper
+ * In this case, I learned to make an array inside the code that I was putting in replit file that is linked above. Below the link is another link. This is where I choose a lesson, and today, I chose Lesson 1.1 and started by copying and pasting code into my replit folder and run to see what it gives us. However, it has come to my eyes that when I run this part of code, there was an error.
+ * Looking back at what I have been learning the past few days on the ideas on comments, where `#` is the comment symbols in python and since this array hasn't been stored in any variable, it doesn't mean anything that has caused this error.
+ ```python
+ ['BANANA', 'APPLE', 'LIME'] # incorrect
+ # ['BANANA', 'APPLE', 'LIME'] # correct
+ ```
+ * to print out a statement from python, we use `print()`. And yes `;`, the semicolons at the end of each code isn't mandatory or we can say that we don't even need it. 
+ * There was also a line of code that was also very giving me a hard time to understand.
+ ```python
+ loud_fruits = [fruit.upper() for fruit in fruits]
+ ```
+ * I saw that in this line of code, we have a variable that isn't declared with a data type, because as we learn, we learned that datatypes aren't as mandatory. 
+ * As we can see here, there is a `fruit.upper()`. I wonder what `.upper()` does. So I went to [w3schools](https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_upper) and see that this is for to upper Case and inside, we called the singular form from the array to change each item to an uppercase.
+ * **What I want to try**: Since in Java, we learned about the idea of indexes, so I would want to try that in Python, whether or not it also works too.
+ * **A-HA** moments: In the example above, I tried what I want to try and I selected one item from 
+ ```python
+ fruits[0].upper()
+ ```
+ In this case I stored it inside a variableName called `banana`. And that this had led me to understand that indexes also work in this case in python. 
+ 
 
 <!-- 
 * Links you used today (websites, videos, etc)
