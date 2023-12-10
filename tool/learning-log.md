@@ -93,13 +93,11 @@ class Car(models.Model):
  * I saw that in this line of code, we have a variable that isn't declared with a data type, because as we learn, we learned that datatypes aren't as mandatory. 
  * As we can see here, there is a `fruit.upper()`. I wonder what `.upper()` does. So I went to [w3schools](https://www.w3schools.com/python/trypython.asp?filename=demo_ref_string_upper) and see that this is for to upper Case and inside, we called the singular form from the array to change each item to an uppercase.
  * **What I want to try**: Since in Java, we learned about the idea of indexes, so I would want to try that in Python, whether or not it also works too.
- * **A-HA** moments: In the example above, I tried what I want to try and I selected one item from 
+ * **A-HA** moments: In the example above, I tried what I want to try and I selected one item from the array to make it uppercase. it inside a variableName called `banana`. And that this had led me to understand that indexes also work in this case in python. But also in w3schools, it had let me discover that when we use `.lower()`, it will help us to have a lowercase word
  ```python
- fruits[0].upper()
+ banana = fruits[0].upper()
  ```
- In this case I stored it inside a variableName called `banana`. And that this had led me to understand that indexes also work in this case in python. 
- 
-
+ * In this lesson, I learned a lot and many concepts about the idea of arrays in Python, but next time, I would like to learn loops in Python and try to connect it to the arrays, such as looping throgh an array.
 <!-- 
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
