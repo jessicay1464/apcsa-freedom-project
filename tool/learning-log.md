@@ -76,8 +76,9 @@ class Car(models.Model):
  * **Challenging**: It was somewhat challenging when I was following though the video linked above, and that we have to have our own terminal and to use a certain code, to connect it to my server in code.cs50.io.
  * **Further Steps**: To learn more the code in the terminal and to follow the steps in my personal computer to see how it works.
 
-
->>>>>>> 6aad8ea85a3781c3d50423fcc3de97fed00fa26d
+### 12/4/23
+ * [Python tutorial](https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=2)
+ * 
 
 
 <!--
