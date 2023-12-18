@@ -76,13 +76,10 @@ class Car(models.Model):
  * **Challenging**: It was somewhat challenging when I was following though the video linked above, and that we have to have our own terminal and to use a certain code, to connect it to my server in code.cs50.io.
  * **Further Steps**: To learn more the code in the terminal and to follow the steps in my personal computer to see how it works.
 
-### 12/4/23
- * [Python tutorial](https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=2)
-
-
 ### 12/4/2023 - 12/10/2023:
  * [replit tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
- * [python tutorial](https://docs.python.org/3/tutorial/index.html)
+ * [Python document](https://docs.python.org/3/tutorial/index.html)
+ * [Python tutorial](https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=2)
  * In this case, I learned to make an array inside the code that I was putting in replit file that is linked above. Below the link is another link. This is where I choose a lesson, and today, I chose Lesson 1.1 and started by copying and pasting code into my replit folder and run to see what it gives us. However, it has come to my eyes that when I run this part of code, there was an error.
  * Looking back at what I have been learning the past few days on the ideas on comments, where `#` is the comment symbols in python and since this array hasn't been stored in any variable, it doesn't mean anything that has caused this error.
  ```python
