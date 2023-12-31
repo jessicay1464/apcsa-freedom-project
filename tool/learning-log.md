@@ -99,6 +99,10 @@ class Car(models.Model):
  banana = fruits[0].upper()
  ```
  * In this lesson, I learned a lot and many concepts about the idea of arrays in Python, but next time, I would like to learn loops in Python and try to connect it to the arrays, such as looping throgh an array.
+
+ ### 12/18/2023 - 1/2/2024:
+ * [w3schools loops] (https://www.w3schools.com/python/python_for_loops.asp)
+   * Compared to the array that I have created 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
