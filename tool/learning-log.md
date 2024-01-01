@@ -100,7 +100,7 @@ class Car(models.Model):
  ```
  * In this lesson, I learned a lot and many concepts about the idea of arrays in Python, but next time, I would like to learn loops in Python and try to connect it to the arrays, such as looping throgh an array.
 
- ### 12/18/2023 - 1/2/2024:
+ ### 12/18/2023 - 1/2/2024 (Winter Break):
  * [w3schools loops] (https://www.w3schools.com/python/python_for_loops.asp)
    * Compared to the array that I have created, I wanted to add on to the array concept and learn about loops so that I can iterate through an array.
  * [add loop tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
@@ -122,7 +122,22 @@ for singularVar in arrayName:
 ```python
 fruits = ["apple", "banana", "cherry", 1] 
 ```
- * At first, I was predicting that python would be similar to Java that it would only take in one type of data type.
+ * At first, I was predicting that python would be similar to Java that it would only take in one type of data type. However, that was not the case. Above, when I add an integer, and run the code, there wasn't any errors, and that a major takeaway is that the arrays can take all type of data.
+ * But I predict that this might because we aren't declaring an exact type of datatype. But maybe when I specifically declare which data type I want or will be using and that it might accept only one type of data.
+<br>
+
+**Looping Through a String**: <br>
+ * We might not want our code to loop through just an array, but also looping through words in a specific array. Therefore, the format for that would be 
+```python
+for singularVar in "wordThatYouWantToLoopThrough":
+  print singularVar
+``` 
+ * The code above would help loop through the String, the letter of the word.
+<br>
+
+**A-HA Moments**: In this case, while I was tinkering through the code and writing code for the for loop in python, I found out that the code format and what it does is very similar to the enhanced for loop in Java, and that was also known as the for-each loop. 
+<br>
+**Try Next**: I would want to try to connect all the values and the code back into the freedom project and create a little website, but maybe before that, I should learn about some code about the examples of the creating a website and select some parts that may be useful in my project.
 
 <!--
 * Links you used today (websites, videos, etc)
