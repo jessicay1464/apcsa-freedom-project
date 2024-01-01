@@ -102,7 +102,28 @@ class Car(models.Model):
 
  ### 12/18/2023 - 1/2/2024:
  * [w3schools loops] (https://www.w3schools.com/python/python_for_loops.asp)
-   * Compared to the array that I have created 
+   * Compared to the array that I have created, I wanted to add on to the array concept and learn about loops so that I can iterate through an array.
+ * [add loop tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
+   * `for-loop` - similar in java, but different formatting
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+ * When we look at the loop, it is similar that in java, we both have the `for` loop. 
+ * In the format of the `python` code, we have
+```python
+arrayName = [item1, item2, item3 ...]
+for singularVar in arrayName:
+  # code to run
+```
+ * In the code above, we first have to have an array of item, and that based of my replit tinkering and that I changed many values inside the array and set up multiple conditions on why certain code is in that way. For instance, I have changed to see for the `singularVar` name to a different letter to see if the different name is acceptable or does it must have to be `x`, therefore when I changed the value, I was successfully understanding that it was just a name and that, it won't create an error. 
+ * At the same time, I have learned about the code in Java how an array can only have 1 type of datatype. In this case, in `w3schools`, it provides me with and example of String
+```python
+fruits = ["apple", "banana", "cherry", 1] 
+```
+ * At first, I was predicting that python would be similar to Java that it would only take in one type of data type.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
