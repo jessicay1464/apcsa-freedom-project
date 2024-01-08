@@ -139,6 +139,47 @@ for singularVar in "wordThatYouWantToLoopThrough":
 <br>
 **Try Next**: I would want to try to connect all the values and the code back into the freedom project and create a little website, but maybe before that, I should learn about some code about the examples of the creating a website and select some parts that may be useful in my project.
 
+### 1/3/24 - 1/7/24
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+   * to create a python website, we need to install Flask into our VS-CODE using the code `pip install flask`
+   * `from flask import Flask`
+     * depending on your server and what it takes, it might have to be specific on which version you will be using mentioned in the front of the code named above.
+   * create two `python files` -- `app.py` and `views.py`.<br>
+**`views.py`**
+```
+app = Flask(__name__)
+
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+ * The value stored the `debug=True` and `port=8000` is stored and that it is similar to the css style that styles the word in the what the programmer will be typing in. 
+   * This is mutable, which means that the value can and will be able to change depending on the programmer. 
+<br>
+
+**`app.py`**
+```
+from flask import Blueprint
+# view.py
+# @app.route("/")
+# def home():
+# return "this is the home page"
+```
+ * Above, when you run this code, the home page will be shown in the webpage.
+ * I have tried to follow this tutorial to follow the steps as listed above, however, this was a challenge for me because I only have a chromebook and that when I have tried to install, the video only provided me with macbook and that this didn't work for me, therefore, during my tinkering and learning my tools later, I would like to watch more videos that has an install in python. However, I have finished watching this tutorial and got the idea of hwo we can combine the use of python and Flask to halp me learn the structure of the website and that I have learned a lot.
+ * Later on after a few days, I have got an understanding in the different numbers and the datatype of numbers that are existed in python.
+   * I have decided to learn this part because it can help me learn the different datatypes that python teaches. 
+   * `int`
+   `x = 1; #integer` - a number, integer (positive)
+   * `float`
+   `y = 2.8 #float` - a positive, negative, or containing more than one decimal point
+   * `complex`
+   `z = 1j # complex` - "j as an variable" 
+   * `type()` - to help verify an object
+   * [replit tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
+   * I ahve continued to add on to my tinkering in python, and that since I have been very familiar with the use of `int` and `float`, I spent more time in `complex`. I saw that there was a variable name. I have wated to try to add on anotehr variable other than `j` however, it didn't let me.<br>
+
+**A-HA MOMENTS**: In this round of tinkering, I have learned a new tool, minaly Flask that can be used to help me in building my project with the use of python. I have learn the code to create the route to install and generate the running based of the video, But also understand that `complex` only takes in the letter `j` and nothing <br>
+**TRY NEXT:** As I mentioned above, I need to dig a little deeper in learning the installing the python into my chrombook. Or the backhand si to use my partners computer to help install. 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
