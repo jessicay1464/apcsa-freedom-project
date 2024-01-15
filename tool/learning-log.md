@@ -139,7 +139,7 @@ for singularVar in "wordThatYouWantToLoopThrough":
 <br>
 **Try Next**: I would want to try to connect all the values and the code back into the freedom project and create a little website, but maybe before that, I should learn about some code about the examples of the creating a website and select some parts that may be useful in my project.
 
-### 1/3/24 - 1/7/24
+### 1/3/24 - 1/14/24
  * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
    * to create a python website, we need to install Flask into our VS-CODE using the code `pip install flask`
    * `from flask import Flask`
@@ -179,7 +179,8 @@ from flask import Blueprint
    * I ahve continued to add on to my tinkering in python, and that since I have been very familiar with the use of `int` and `float`, I spent more time in `complex`. I saw that there was a variable name. I have wated to try to add on anotehr variable other than `j` however, it didn't let me.<br>
 
 **A-HA MOMENTS**: In this round of tinkering, I have learned a new tool, minaly Flask that can be used to help me in building my project with the use of python. I have learn the code to create the route to install and generate the running based of the video, But also understand that `complex` only takes in the letter `j` and nothing <br>
-**TRY NEXT:** As I mentioned above, I need to dig a little deeper in learning the installing the python into my chrombook. Or the backhand si to use my partners computer to help install. 
+**TRY NEXT:** As I mentioned above, I need to dig a little deeper in learning the installing the python into my chromebook. Or the backhand is to use my partners computer to help install. 
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
