@@ -198,7 +198,31 @@ def hello_world():
         'index.html',
         user_id=request.headers['X-Replit-User-Id'],
 ```
- * In this code above, I have followed the tutorial and learned to 
+ * In this code above, I have followed the tutorial and learned to create a little project that we have created where the user login and says hello to the username. 
+ * `@app.route` will make the code back to recall what you code have been creating. It is like saying, "Now let's run the code."
+ * `'index.html',` 
+   * Inside, I played around with the `styles.css` and the `HTML` file to help me see with numbers and and classes are connected with each other. There was also a login page in the tutorial that I would want to change some parts of a code to see what else I can input. Connecting this to our freedom project, there are some parts where we would want to connect it to our project such as using the webpage that I have cerated using python to create this menu that can be useful in creating our overall freedom project.
+   * I learned that the purpose of writing this in the HTML is to set them into classes so that we can later use `style.css` connected to the `python` that we can later style and the project in any way that we want to make the webview what want it to look like.
+ * Following the tutorial, I continued with learning my tool with the assistance of FLASK to help with python in learning the code and making sure that it prints out the code the way we want it to be and look like. In this case, we need a `view.py`. This was what I wrote in the learning log referred to last week. In `view.py` we can use this code to help me view the code later on in the webview. 
+```python 
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return "this is the home page"
+
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+ * The purpose of writing t this is that `hello_world()` is similar to a function
+ * Everytime that is called, we will see the return statement `return "this is the home page"`
+ * Therefore, everytime we can use this function everytime it will be called, it will print it out in the webview. 
+
+**A-HA MOMENTS**: In this round of tinkering, I was continuing my project with my journey in tinkering my tools. I was able to use the tutorial that I have learned last time to help me learn and connect what I used in Flask and Python to help me create thsi webpage. I have also learned how to create the route in between `main.py` and `view.py` on how we use what we type in `main.py` to help me type code in python so that we can learn the project that we are learning and later use `view.py` to view our output <br>
+**TRY NEXT:** I would need to use more of what we learned in python, in the weeks (such as variables, datatypes, and many more to help us understand the topic) before to include user inputs to save and use the data to make my webpage more interactive.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
