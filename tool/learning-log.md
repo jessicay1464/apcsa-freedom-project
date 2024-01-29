@@ -181,6 +181,24 @@ from flask import Blueprint
 **A-HA MOMENTS**: In this round of tinkering, I have learned a new tool, minaly Flask that can be used to help me in building my project with the use of python. I have learn the code to create the route to install and generate the running based of the video, But also understand that `complex` only takes in the letter `j` and nothing <br>
 **TRY NEXT:** As I mentioned above, I need to dig a little deeper in learning the installing the python into my chromebook. Or the backhand is to use my partners computer to help install. 
 
+### 1/22/24 - 1/30/24
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * Based on the tutorial above, we have seen how to create use python and flask to create this web design.
+ * I have followed the tutorial to help me guide through this process
+```python
+from flask import Flask, render_template, request
+
+app = Flask('app')
+
+@app.route('/')
+def hello_world():
+    print(request.headers)
+    return render_template(
+        'index.html',
+        user_id=request.headers['X-Replit-User-Id'],
+```
+ * In this code above, I have followed the tutorial and learned to 
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
