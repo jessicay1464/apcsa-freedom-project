@@ -220,7 +220,13 @@ if __name__ == '__main__':
  * Everytime that is called, we will see the return statement `return "this is the home page"`
  * Therefore, everytime we can use this function everytime it will be called, it will print it out in the webview. 
 
-**A-HA MOMENTS**: In this round of tinkering, I was continuing my project with my journey in tinkering my tools. I was able to use the tutorial that I have learned last time to help me learn and connect what I used in Flask and Python to help me create thsi webpage. I have also learned how to create the route in between `main.py` and `view.py` on how we use what we type in `main.py` to help me type code in python so that we can learn the project that we are learning and later use `view.py` to view our output <br>
+**A-HA MOMENTS**: In this round of tinkering, I was continuing my project with my journey in tinkering my tools. I was able to use the tutorial that I have learned last time to help me learn and connect what I used in Flask and Python to help me create thsi webpage. I have also learned how to create the route in between `main.py` and `view.py` on how we use what we type in `main.py` to help me type code in python so that we can learn the project that we are learning and later use `view.py` to view our output. 
+```python
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+If we didn't have this part of the code, the code won't run because the main part over here is to have `app.run` to help the overall code to run and be printed
+<br>
 **TRY NEXT:** I would need to use more of what we learned in python, in the weeks (such as variables, datatypes, and many more to help us understand the topic) before to include user inputs to save and use the data to make my webpage more interactive.
 
 <!--
