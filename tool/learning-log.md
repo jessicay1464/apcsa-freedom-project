@@ -183,7 +183,7 @@ from flask import Blueprint
 
 ### 1/22/24 - 1/30/24
  * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
- * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * [python web tutorial](https://youtube/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
  * Based on the tutorial above, we have seen how to create use python and flask to create this web design.
  * I have followed the tutorial to help me guide through this process
 ```python
@@ -227,7 +227,37 @@ if __name__ == '__main__':
 ```
 If we didn't have this part of the code, the code won't run because the main part over here is to have `app.run` to help the overall code to run and be printed
 <br>
+
 **TRY NEXT:** I would need to use more of what we learned in python, in the weeks (such as variables, datatypes, and many more to help us understand the topic) before to include user inputs to save and use the data to make my webpage more interactive.
+
+### 1/31/24 - 2/4/24
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * For my part of the project, I have continued learning my project by using the same two sources that I have used last weeek.
+ * This is because, I was having issues in understanding the purpose of the code and didn't have the understanding with the routes. I started with writing on a seperate file, but I was stuck becasue I didn't understand what I was typing in to my code, therefore, this has let me spent another week in understanding the routes of the code, more specifically to understand what I can do to help me in my future coding in project.
+ * In this case, I followed the tutorial and continued my coding from last week.
+ * Below is the code in the for creating the different routes. 
+ * `/` is similar to `and` and also saying to `go to the next one`.
+```python
+from flask import Blueprint
+
+view = Blueprint(__name__, "views") 
+
+@view.route("/")
+def home():
+  return "home page"
+```
+ * `__name__` is the first arguement that you pass in to blueprint in order to send 
+   * You must have the the `__name__` before or else the `blueprint` will not be found and that there will be an error. 
+
+**A-HA MOMENTS**: In this round of tinkering, I have understand the routes of the concepts. I found out that when I create the code below, i can create multiple routes that can lead to the webpage. Therefore, we must have different ("/") names after the parentheses. However, we can have multiple, but we can the same return messages. 
+```python
+@view.route("/")
+def home():
+  return "home page"
+```
+
+**TRY NEXT:** Next time, I would want to continue our process of the code. Due to the reason that now I still couldn't see the output that we have typed in the code, I would have to create a `tinker.html` to help connect my python into the html code. This can help me preview my code that I have seen in the video. 
 
 <!--
 * Links you used today (websites, videos, etc)
