@@ -146,17 +146,20 @@ for singularVar in "wordThatYouWantToLoopThrough":
      * depending on your server and what it takes, it might have to be specific on which version you will be using mentioned in the front of the code named above.
    * create two `python files` -- `app.py` and `views.py`.<br>
 **`views.py`**
-```
+
+```python
 app = Flask(__name__)
 
 if __name__ == '__main__':
   app.run(debug=True, port=8000)
 ```
+
  * The value stored the `debug=True` and `port=8000` is stored and that it is similar to the css style that styles the word in the what the programmer will be typing in. 
    * This is mutable, which means that the value can and will be able to change depending on the programmer. 
 <br>
 
 **`app.py`**
+
 ```
 from flask import Blueprint
 # view.py
