@@ -7,9 +7,7 @@ Throughout these weeks of tinkering
 ### What is my plan for the Spring Break?
 
 ### Skills
- * `How to Google`
- * `Problem Decomposition`
- * Two skills that I have accomplished while tinkering in these few weeks of tinkering will be `How to Google` and `Problem Decomposition` because in these cases, I was able to use Google, as a tool to help me understand and learn the tool. In some cases, when I look through some parts of the code, I have met some misunderstandings and difficulties
+ * Two skills that I have accomplished while tinkering in these few weeks of tinkering will be `How to Google` and `Problem Decomposition` because in these cases, I was able to use Google, as a tool to help me understand and learn the tool. In some cases, when I look through some parts of the code, I have met some misunderstandings and difficulties. With the help of Google, I was able to continue with my journey with Python and finding out how we can continue with my project with the connection and the connection of python.
 ### EDP
 
 ### Sources
