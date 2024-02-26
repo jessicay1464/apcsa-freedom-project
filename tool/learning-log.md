@@ -76,13 +76,10 @@ class Car(models.Model):
  * **Challenging**: It was somewhat challenging when I was following though the video linked above, and that we have to have our own terminal and to use a certain code, to connect it to my server in code.cs50.io.
  * **Further Steps**: To learn more the code in the terminal and to follow the steps in my personal computer to see how it works.
 
-### 12/4/23
- * [Python tutorial](https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=2)
-
-
 ### 12/4/2023 - 12/10/2023:
  * [replit tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
- * [python tutorial](https://docs.python.org/3/tutorial/index.html)
+ * [Python document](https://docs.python.org/3/tutorial/index.html)
+ * [Python tutorial](https://www.youtube.com/watch?v=hEgO047GxaQ&list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3&index=2)
  * In this case, I learned to make an array inside the code that I was putting in replit file that is linked above. Below the link is another link. This is where I choose a lesson, and today, I chose Lesson 1.1 and started by copying and pasting code into my replit folder and run to see what it gives us. However, it has come to my eyes that when I run this part of code, there was an error.
  * Looking back at what I have been learning the past few days on the ideas on comments, where `#` is the comment symbols in python and since this array hasn't been stored in any variable, it doesn't mean anything that has caused this error.
  ```python
@@ -102,7 +99,169 @@ class Car(models.Model):
  banana = fruits[0].upper()
  ```
  * In this lesson, I learned a lot and many concepts about the idea of arrays in Python, but next time, I would like to learn loops in Python and try to connect it to the arrays, such as looping throgh an array.
- 
+
+ ### 12/18/2023 - 1/2/2024 (Winter Break):
+ * [w3schools loops] (https://www.w3schools.com/python/python_for_loops.asp)
+   * Compared to the array that I have created, I wanted to add on to the array concept and learn about loops so that I can iterate through an array.
+ * [add loop tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
+   * `for-loop` - similar in java, but different formatting
+```python
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)
+```
+ * When we look at the loop, it is similar that in java, we both have the `for` loop.
+ * In the format of the `python` code, we have
+```python
+arrayName = [item1, item2, item3 ...]
+for singularVar in arrayName:
+  # code to run
+```
+ * In the code above, we first have to have an array of item, and that based of my replit tinkering and that I changed many values inside the array and set up multiple conditions on why certain code is in that way. For instance, I have changed to see for the `singularVar` name to a different letter to see if the different name is acceptable or does it must have to be `x`, therefore when I changed the value, I was successfully understanding that it was just a name and that, it won't create an error.
+ * At the same time, I have learned about the code in Java how an array can only have 1 type of datatype. In this case, in `w3schools`, it provides me with and example of String
+```python
+fruits = ["apple", "banana", "cherry", 1]
+```
+ * At first, I was predicting that python would be similar to Java that it would only take in one type of data type. However, that was not the case. Above, when I add an integer, and run the code, there wasn't any errors, and that a major takeaway is that the arrays can take all type of data.
+ * But I predict that this might because we aren't declaring an exact type of datatype. But maybe when I specifically declare which data type I want or will be using and that it might accept only one type of data.
+<br>
+
+**Looping Through a String**: <br>
+ * We might not want our code to loop through just an array, but also looping through words in a specific array. Therefore, the format for that would be
+```python
+for singularVar in "wordThatYouWantToLoopThrough":
+  print singularVar
+```
+ * The code above would help loop through the String, the letter of the word.
+<br>
+
+**A-HA Moments**: In this case, while I was tinkering through the code and writing code for the for loop in python, I found out that the code format and what it does is very similar to the enhanced for loop in Java, and that was also known as the for-each loop.
+<br>
+**Try Next**: I would want to try to connect all the values and the code back into the freedom project and create a little website, but maybe before that, I should learn about some code about the examples of the creating a website and select some parts that may be useful in my project.
+
+### 1/3/24 - 1/14/24
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+   * to create a python website, we need to install Flask into our VS-CODE using the code `pip install flask`
+   * `from flask import Flask`
+     * depending on your server and what it takes, it might have to be specific on which version you will be using mentioned in the front of the code named above.
+   * create two `python files` -- `app.py` and `views.py`.<br>
+**`views.py`**
+
+```python
+app = Flask(__name__)
+
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+
+ * The value stored the `debug=True` and `port=8000` is stored and that it is similar to the css style that styles the word in the what the programmer will be typing in.
+   * This is mutable, which means that the value can and will be able to change depending on the programmer.
+<br>
+
+**`app.py`**
+
+```
+from flask import Blueprint
+# view.py
+# @app.route("/")
+# def home():
+# return "this is the home page"
+```
+ * Above, when you run this code, the home page will be shown in the webpage.
+ * I have tried to follow this tutorial to follow the steps as listed above, however, this was a challenge for me because I only have a chromebook and that when I have tried to install, the video only provided me with macbook and that this didn't work for me, therefore, during my tinkering and learning my tools later, I would like to watch more videos that has an install in python. However, I have finished watching this tutorial and got the idea of hwo we can combine the use of python and Flask to halp me learn the structure of the website and that I have learned a lot.
+ * Later on after a few days, I have got an understanding in the different numbers and the datatype of numbers that are existed in python.
+   * I have decided to learn this part because it can help me learn the different datatypes that python teaches.
+   * `int`
+   `x = 1; #integer` - a number, integer (positive)
+   * `float`
+   `y = 2.8 #float` - a positive, negative, or containing more than one decimal point
+   * `complex`
+   `z = 1j # complex` - "j as an variable"
+   * `type()` - to help verify an object
+   * [replit tinkering](https://replit.com/@jessicay1464/GlisteningGloomyEvaluations#main.py)
+   * I ahve continued to add on to my tinkering in python, and that since I have been very familiar with the use of `int` and `float`, I spent more time in `complex`. I saw that there was a variable name. I have wated to try to add on anotehr variable other than `j` however, it didn't let me.<br>
+
+**A-HA MOMENTS**: In this round of tinkering, I have learned a new tool, minaly Flask that can be used to help me in building my project with the use of python. I have learn the code to create the route to install and generate the running based of the video, But also understand that `complex` only takes in the letter `j` and nothing <br>
+**TRY NEXT:** As I mentioned above, I need to dig a little deeper in learning the installing the python into my chromebook. Or the backhand is to use my partners computer to help install.
+
+### 1/22/24 - 1/30/24
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtube/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * Based on the tutorial above, we have seen how to create use python and flask to create this web design.
+ * I have followed the tutorial to help me guide through this process
+```python
+from flask import Flask, render_template, request
+
+app = Flask('app')
+
+@app.route('/')
+def hello_world():
+    print(request.headers)
+    return render_template(
+        'index.html',
+        user_id=request.headers['X-Replit-User-Id'],
+```
+ * In this code above, I have followed the tutorial and learned to create a little project that we have created where the user login and says hello to the username.
+ * `@app.route` will make the code back to recall what you code have been creating. It is like saying, "Now let's run the code."
+ * `'index.html',`
+   * Inside, I played around with the `styles.css` and the `HTML` file to help me see with numbers and and classes are connected with each other. There was also a login page in the tutorial that I would want to change some parts of a code to see what else I can input. Connecting this to our freedom project, there are some parts where we would want to connect it to our project such as using the webpage that I have cerated using python to create this menu that can be useful in creating our overall freedom project.
+   * I learned that the purpose of writing this in the HTML is to set them into classes so that we can later use `style.css` connected to the `python` that we can later style and the project in any way that we want to make the webview what want it to look like.
+ * Following the tutorial, I continued with learning my tool with the assistance of FLASK to help with python in learning the code and making sure that it prints out the code the way we want it to be and look like. In this case, we need a `view.py`. This was what I wrote in the learning log referred to last week. In `view.py` we can use this code to help me view the code later on in the webview.
+```python
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+  return "this is the home page"
+
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+ * The purpose of writing t this is that `hello_world()` is similar to a function
+ * Everytime that is called, we will see the return statement `return "this is the home page"`
+ * Therefore, everytime we can use this function everytime it will be called, it will print it out in the webview.
+
+**A-HA MOMENTS**: In this round of tinkering, I was continuing my project with my journey in tinkering my tools. I was able to use the tutorial that I have learned last time to help me learn and connect what I used in Flask and Python to help me create thsi webpage. I have also learned how to create the route in between `main.py` and `view.py` on how we use what we type in `main.py` to help me type code in python so that we can learn the project that we are learning and later use `view.py` to view our output.
+```python
+if __name__ == '__main__':
+  app.run(debug=True, port=8000)
+```
+If we didn't have this part of the code, the code won't run because the main part over here is to have `app.run` to help the overall code to run and be printed
+<br>
+
+**TRY NEXT:** I would need to use more of what we learned in python, in the weeks (such as variables, datatypes, and many more to help us understand the topic) before to include user inputs to save and use the data to make my webpage more interactive.
+
+### 1/31/24 - 2/4/24
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * For my part of the project, I have continued learning my project by using the same two sources that I have used last weeek.
+ * This is because, I was having issues in understanding the purpose of the code and didn't have the understanding with the routes. I started with writing on a seperate file, but I was stuck becasue I didn't understand what I was typing in to my code, therefore, this has let me spent another week in understanding the routes of the code, more specifically to understand what I can do to help me in my future coding in project.
+ * In this case, I followed the tutorial and continued my coding from last week.
+ * Below is the code in the for creating the different routes.
+ * `/` is similar to `and` and also saying to `go to the next one`.
+```python
+from flask import Blueprint
+
+view = Blueprint(__name__, "views")
+
+@view.route("/")
+def home():
+  return "home page"
+```
+ * `__name__` is the first arguement that you pass in to blueprint in order to send
+   * You must have the the `__name__` before or else the `blueprint` will not be found and that there will be an error.
+
+**A-HA MOMENTS**: In this round of tinkering, I have understand the routes of the concepts. I found out that when I create the code below, i can create multiple routes that can lead to the webpage. Therefore, we must have different ("/") names after the parentheses. However, we can have multiple, but we can the same return messages.
+```python
+@view.route("/")
+def home():
+  return "home page"
+```
+
+**TRY NEXT:** Next time, I would want to continue our process of the code. Due to the reason that now I still couldn't see the output that we have typed in the code, I would have to create a `tinker.html` to help connect my python into the html code. This can help me preview my code that I have seen in the video.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
