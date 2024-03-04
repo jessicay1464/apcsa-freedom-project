@@ -262,6 +262,30 @@ def home():
 
 **TRY NEXT:** Next time, I would want to continue our process of the code. Due to the reason that now I still couldn't see the output that we have typed in the code, I would have to create a `tinker.html` to help connect my python into the html code. This can help me preview my code that I have seen in the video.
 
+### 2/26/24 - 3/4/24
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * Continuing from the tinkering from last week, I have started to learn from the 9:22 (continuing on what I have been learning from last week). I have also play back a little bit because I have forgottn
+   * `rendering_template:` The good part about this is that we can pass in any data value into this template that later we can be rendered by it. 
+   * For instance, in the `html` page, we have been tinkering about the `python` page, that later we can be passed into the `html` file through rendering it. 
+   * `def` define
+   * When we type in the code, 
+   ```python
+   return render__template("index.html", name=username)
+   ```
+   * This is mainly when we would want to have a portfolio for this code but when we define the code above, we follow the route to the profile page and then inside the profile, to find the username. 
+     * What this will return is what in the `index.html` file that will be find in the `name` variable that later will be useful to get the name of the specific user. 
+ * I have also played about the making up names and different variable names to see what is connected inside between the `html` file and the `python` files. I learned that we can identify the variable as any variable, but in this case, we have to direct the template that we are currently in to help us go through the flow. 
+ * Regarding to the syntax errors, it is very significant that we don't need `;` but for some parts, we need semi colons, instead of curly brackets as we learn from the `java`
+ <br>
+ <br>
+ 
+ **A HA Moments**: A A-Ha moment that I = have discovered in this round of tinkering is how when we what to pass in the data value from `Python` to `HTML` we can set them a `div` and use `{{variableName}}` to help us understand what we will be passing in. Make sure that when we pass in these types of datas, we should have to send in the data through the use of `{{}}` and not just one. But also, I have learned that when we want to pass into the data, it doesn't have to be tagged in the one data type, but instead, we should have it tagged where ever you want this name to be
+ ```python
+   <h1>Hello {{name}}</h1>
+ ```
+ **Try Next:** I have tried to follow every step of the tutorial. But next step, I would like to continuing finish watching this tutorial and learn how I can use this to help me code my webpage that I have been learning such as importing images and many more. At the same time, I will also help Angela in drawing the characters that we have been designing for our games later on in the project.
+
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
