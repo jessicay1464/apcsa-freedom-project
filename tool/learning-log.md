@@ -286,7 +286,55 @@ def home():
  ```
  **Try Next:** I have tried to follow every step of the tutorial. But next step, I would like to continuing finish watching this tutorial and learn how I can use this to help me code my webpage that I have been learning such as importing images and many more. At the same time, I will also help Angela in drawing the characters that we have been designing for our games later on in the project.
 
-<!--
+### 3/4/2024 - 3/10/2024
+ * [Jinja templates](https://jinja.palletsprojects.com/en/3.1.x/templates/)
+ *  [DJango templates](https://docs.djangoproject.com/en/5.0/topics/templates/)
+ * [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
+ * Last week, I have talked with Mr. Mueller about deep diving inside on how I can use the code that I have so far to help me build a my webpage or how can I coorperate how I can coorporate my project into our topic. In this case, Mr. Mueller have helped through the way that I can `research the templates` that are provided for us. In this case, we have learned about the three different Platforms based on what Mr. Mueller had recommended me on. 
+ * All these platforms are all web frameworks in Python that we can use to help us build a webpage through the use of Python language.
+ * `Flask`
+   * In this case, this is a base layout of the application. In this page, can have a title page, a headers page, log out page corporated for the page.
+   * This template is directly imported in the `template` file. 
+   * ```python
+   <!doctype html>
+    <title>{% block title %}{% endblock %} - Flaskr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <nav>
+      <h1>Flaskr</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+    </nav>
+    <section class="content">
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+      {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% block content %}{% endblock %}
+    </section>
+   ```
+
+ * I haved learned that the g.username is an automatic value inside the flask 
+   * In this case, when the user is logged in, it can be a log-in link or a logout link that can be displayed.
+   * In this case, we have 
+ * `Jinja`
+   * Jinga behaves the most similar with Python. 
+   * Jinja's syntax is from the static data in the template
+   * Any syntax value between the `{{ }}` is an expression that will be output to the fianl document
+   * For all the `{% %}` denotes a control flow in common to the `if` and `for`. 
+ * `DJango`
+
+**A-HA MOMENTS**: I have learned that based on these templates (Flask) is that no matter how you want your templates to be viewed in your server, you won't be able to preview it, and this is because when we are calling `rendering_templates()` function, we aren't temporarily inside the directory `flask` package. Instead of the HTML structure in each template, it will extend the base template and overrride specific sections. Since we have the templated file inside the file, we have also use the file to make multiple templates, as a way that we can use multiple sub-classes, for one simgle class.
+ 
+ <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
