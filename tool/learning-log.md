@@ -295,7 +295,8 @@ def home():
  * `Flask`
    * In this case, this is a base layout of the application. In this page, can have a title page, a headers page, log out page corporated for the page.
    * This template is directly imported in the `template` file. 
-   * ```python
+   * 
+   ```python
    <!doctype html>
     <title>{% block title %}{% endblock %} - Flaskr</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
