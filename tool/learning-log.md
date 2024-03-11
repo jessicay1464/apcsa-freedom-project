@@ -288,7 +288,7 @@ def home():
 
 ### 3/4/2024 - 3/10/2024
  * [Jinja templates](https://jinja.palletsprojects.com/en/3.1.x/templates/)
- *  [DJango templates](https://docs.djangoproject.com/en/5.0/topics/templates/)
+ *  [DJango templates](https://docs.djangoproject.com/en/5.0/ref/templates/language/)
  * [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
  * Last week, I have talked with Mr. Mueller about deep diving inside on how I can use the code that I have so far to help me build a my webpage or how can I coorperate how I can coorporate my project into our topic. In this case, Mr. Mueller have helped through the way that I can `research the templates` that are provided for us. In this case, we have learned about the three different Platforms based on what Mr. Mueller had recommended me on. 
  * All these platforms are all web frameworks in Python that we can use to help us build a webpage through the use of Python language.
@@ -324,15 +324,35 @@ def home():
 
  * I haved learned that the g.username is an automatic value inside the flask 
    * In this case, when the user is logged in, it can be a log-in link or a logout link that can be displayed.
-   * In this case, we have 
+   * In this case, we have a header, a a title and a content.
+   * This can be useful in a way that everytime there is a new user, we will have this page created.
+   * At the same time, we can also have a register and a login page template that I will look into later.
  * `Jinja`
    * Jinga behaves the most similar with Python. 
    * Jinja's syntax is from the static data in the template
    * Any syntax value between the `{{ }}` is an expression that will be output to the fianl document
    * For all the `{% %}` denotes a control flow in common to the `if` and `for`. 
+     * `{% ... %}` for Statements
+     * `{{ ... }}` for Expressions to print to the template output
+     * `{# ... #}` for Comments 
+       * such as in Java, we have `//` and in Python, we have `#` as our Python comment
+     * `{% if True %}` --> similar to `if`
+       * `{% end if %}` --> similar to else (if this statement is true and the statement ends)
  * `DJango`
+   * Will be best for a webpage API.
+   * In the templates, we have a text file, and that in this template, it will contain variables that will later get evaluated and that also includes the logic of the template
+   * `{{ variable }}`
+     * can contain alphabets and characters and underscore
+     * no spaces and no underscore and may also not be a number.
+   * In DJango, when we use the `.` inside the varubale name , it means that it will repalce the `title` attribute with the section object.
+     * This will be a replacement 
+     * similar to entering a object and a method.
+   * when we have `|`, we can also select a value to add design to it such as fonts, linkbreaks, how to join words and methods that we can change the group of words in the output.
 
 **A-HA MOMENTS**: I have learned that based on these templates (Flask) is that no matter how you want your templates to be viewed in your server, you won't be able to preview it, and this is because when we are calling `rendering_templates()` function, we aren't temporarily inside the directory `flask` package. Instead of the HTML structure in each template, it will extend the base template and overrride specific sections. Since we have the templated file inside the file, we have also use the file to make multiple templates, as a way that we can use multiple sub-classes, for one simgle class.
+<br>
+
+**Next Step**: I will continuing tinker with these tools to help me find out which tool can be the best for me in this case. But also, I will start building out the base MVP with Python, and later cooperating harder platforms into my project. I will also watch tutorials and continuing with templates from Replit. At the same time, I will also be uploading sprites with my partner, Angela, to follow the MVP plan. 
  
  <!--
 * Links you used today (websites, videos, etc)
