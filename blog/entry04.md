@@ -60,7 +60,7 @@ def home():
        * such as in Java, we have `//` and in Python, we have `#` as our Python comment
      * `{% if True %}` --> similar to `if`
        * `{% end if %}` --> similar to else (if this statement is true and the statement ends)
- * `DJango`
+ #### `DJango`
    * Will be best for a webpage API.
    * In the templates, we have a text file, and that in this template, it will contain variables that will later get evaluated and that also includes the logic of the template
    * `{{ variable }}`
