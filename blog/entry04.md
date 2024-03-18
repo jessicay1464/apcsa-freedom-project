@@ -2,7 +2,74 @@
 ##### 3/11/24
 
 ### How have I been learning my tool?
- * In these few weeks of tinkering, I some sort of overcome an issue. We have learned the 
+ * In these few weeks of tinkering, I some sort of overcome an issue. I have been learning abotu both Flask and DJango and learned all the backends of the topic, but I found out that it was very difficult to create and build a product with only Flask and DJango, therefore, I asked Mr. Mueller to give me some advice and he told me to look through the templates from `DJango`, `Flask`, and last but not least,`Jinja`. `Jinja` was actually really new to me.
+ * But before that, I have did some Flask tinkering too, in the replit page, and is linked below in the source. In this case, I followed the tutorial and continued my coding from last week. Below is the code in the for creating the different routes such as in a repo, we have different folders and files that we go through.
+   * `/` is similar to `and` and also saying to `go to the next one`. At the same time, I learned that `__name__` is the first arguement that you pass in to blueprint in order to send. Also, you must have the the `__name__` before or else the `blueprint` will not be found and that there will be an error.
+```python
+from flask import Blueprint
+
+view = Blueprint(__name__, "views")
+
+@view.route("/")
+def home():
+  return "home page"
+```
+ * During the next week, I have been learning about the different templates that are coming with the data and the library. 
+   * `rendering_template:` The good part about this is that we can pass in any data value into this template that later we can be rendered by it. In the `html` page, we have been tinkering about the `python` page, that later we can be passed into the `html` file through rendering it. 
+   ```python
+   return render__template("index.html", name=username)
+   ```
+   * This is mainly when we would want to have a portfolio for this code but when we define the code above, we follow the route to the profile page and then inside the profile, to find the username. 
+     * What this will return is what in the `index.html` file that will be find in the `name` variable that later will be useful to get the name of the specific user. 
+ * Last week, I have talked with Mr. Mueller about deep diving inside on how I can use the code that I have so far to help me build a my webpage or how can I coorperate how I can coorporate my project into our topic. In this case, Mr. Mueller have helped through the way that I can `research the templates` that are provided for us. In this case, we have learned about the three different Platforms based on what Mr. Mueller had recommended me on. 
+ * All these platforms are all web frameworks in Python that we can use to help us build a webpage through the use of Python language.
+#### `Flask`
+   * In this case, this is a base layout of the application. In this page, can have a title page, a headers page, log out page corporated for the page.
+   * This template is directly imported in the `template` file. 
+   * 
+   ```python
+   <!doctype html>
+    <title>{% block title %}{% endblock %} - Flaskr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <nav>
+      <h1>Flaskr</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+            ...
+    <section class="content">
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+      {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% block content %}{% endblock %}
+    </section>
+   ```
+ * I haved learned that the `g.username` is an automatic value inside the flask 
+   * In this case, when the user is logged in, it can be a log-in link or a logout link that can be displayed. When we have a header, a title and a content. This can be useful in a way that everytime there is a new user, we will have this page created. We can also have a register and a login page template that I will look into later.
+#### `Jinja`
+   * Jinga behaves the most similar with Python. To add on, Jinja's syntax is from the static data in the template
+   * Any syntax value between the `{{ }}` is an expression that will be output to the fianl document
+   * For all the `{% %}` denotes a control flow in common to the `if` and `for`. 
+     * `{% ... %}` for Statements
+     * `{{ ... }}` for Expressions to print to the template output
+     * `{# ... #}` for Comments 
+       * such as in Java, we have `//` and in Python, we have `#` as our Python comment
+     * `{% if True %}` --> similar to `if`
+       * `{% end if %}` --> similar to else (if this statement is true and the statement ends)
+ * `DJango`
+   * Will be best for a webpage API.
+   * In the templates, we have a text file, and that in this template, it will contain variables that will later get evaluated and that also includes the logic of the template
+   * `{{ variable }}`
+     * can contain alphabets and characters and underscore
+     * no spaces and no underscore and may also not be a number.
+   * In DJango, when we use the `.` inside the varubale name , it means that it will repalce the `title` attribute with the section object.
+     * This will be a replacement 
+     * similar to entering a object and a method.
+   * when we have `|`, we can also select a value to add design to it such as fonts, linkbreaks, how to join words and methods that we can change the group of words in the output.
 
 ### How have we been building our MVP?
  * Looking on how we have been learning our MVP is in a way that we are currently in the state of setting up all the little pieces in a folder that later we will be using to help us build out our project itself later on. Angela and I have been spending time learning our tool but at the same time, we also have been creating all the sprites. This can be helpful for our game later so that we can just make sure that the game works the way it is. Or I can mention, the functionality of the game. To add on, we have also build up a repository that helped us organized the different files that we have, for each tool that we have because Angela and I are doing different tools, therefore this can be very helpful for us to make sure that we have the different tools organized in the correct folder. Also, for me, I have been learning through the different templates from all `DJango`, `Jinja`, and also `Flask`. This us because we are learning the different templates that makes sure that which one suits me the best for our project. 
@@ -18,6 +85,7 @@
  * [Jinja templates](https://jinja.palletsprojects.com/en/3.1.x/templates/)
  * [DJango templates](https://docs.djangoproject.com/en/5.0/ref/templates/language/)
  * [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
 
 [Previous](entry03.md) | [Next](entry05.md)
 
