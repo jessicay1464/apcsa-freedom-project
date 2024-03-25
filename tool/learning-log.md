@@ -355,6 +355,19 @@ def home():
 
 **Next Step**: I will continuing tinker with these tools to help me find out which tool can be the best for me in this case. But also, I will start building out the base MVP with Python, and later cooperating harder platforms into my project. I will also watch tutorials and continuing with templates from Replit. At the same time, I will also be uploading sprites with my partner, Angela, to follow the MVP plan. 
  
+### 3/19/2024 - 3/24/2024
+ * [Django Template 2](https://www.w3schools.com/django/django_templates.php)
+ * Django tinkering file `linked inside the tool folder`
+ * [Django video](https://www.youtube.com/watch?v=ZNrlc6TPcrU)
+ * This week, I haven't done a lot, but I have doen a few steps that helped me throughout building my MVP.
+ * Before in the past, I started tinkering and building out my project inside replit from scratch, but now, I have watched more tutorials that have helped my installing from GitHub. I am currently following the tutorial and following the steps that comes to building this project. I have created one file called the `tinker.html` and `tinker-django.py`.
+ * Inside the html code, I have learned that how you would want your project to printed out and how you would want your `html` page want to look like. Therefore, inside my `html` page, I have include a heading `<h1>` and also a `<p>`.
+
+**A-HA MOMENTS**: Similar to what I have learned before from Flask, in these templates, I have learned that for all datatypes to be printed from the webpage for us to view, I have learned that we must have to print out the code through creating the route for HTML. This route will travel though the different types of data inside the `py` file and grab the information and continue the route or later on when we would want to print, it will just come out inside the viewing page. Overall, this week, I haven't done a lot, but I have tried my best to continue my project. 
+<br>
+
+**Next Step**: Further on later in the project, it would be best to continuing collaborating with my partner, Angela. We have already finished drawing all the sprites for our game later on. At the same time, we have been importing all of our sprites inside our folder incide the `freedom-project` repo. After that, Angela and I have seperated off to continue our project on our own. I would love to found out how I can view my outputs after using Django and become more familiar with it. After that, i would love to find out how we can also apply `styles.css` into my webpage to make it look more visually appealing. At the same time, since Grace and Vivian are also using teh sam  tool to me, I believe that it would be best to as them for some tips and asking for some help.
+
  <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
