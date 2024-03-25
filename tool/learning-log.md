@@ -262,6 +262,7 @@ def home():
 
 **TRY NEXT:** Next time, I would want to continue our process of the code. Due to the reason that now I still couldn't see the output that we have typed in the code, I would have to create a `tinker.html` to help connect my python into the html code. This can help me preview my code that I have seen in the video.
 
+### 2/26/24 - 3/4/24
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
