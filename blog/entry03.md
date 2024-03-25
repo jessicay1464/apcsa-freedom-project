@@ -52,7 +52,6 @@ During these few weeks of tinkering our tool and processing, I can say that we a
 ### Sources
  * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
  * [w3schools loops](https://www.w3schools.com/python/python_for_loops.asp) 
- * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
 
 [Previous](entry02.md) | [Next](entry04.md)
 

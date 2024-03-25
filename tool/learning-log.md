@@ -263,7 +263,136 @@ def home():
 **TRY NEXT:** Next time, I would want to continue our process of the code. Due to the reason that now I still couldn't see the output that we have typed in the code, I would have to create a `tinker.html` to help connect my python into the html code. This can help me preview my code that I have seen in the video.
 
 ### 2/26/24 - 3/4/24
-<!--
+ * [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos)
+ * [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg)
+ * Continuing from the tinkering from last week, I have started to learn from the 9:22 (continuing on what I have been learning from last week). I have also play back a little bit because I have forgottn
+   * `rendering_template:` The good part about this is that we can pass in any data value into this template that later we can be rendered by it.
+   * For instance, in the `html` page, we have been tinkering about the `python` page, that later we can be passed into the `html` file through rendering it.
+   * `def` define
+   * When we type in the code,
+   ```python
+   return render__template("index.html", name=username)
+   ```
+   * This is mainly when we would want to have a portfolio for this code but when we define the code above, we follow the route to the profile page and then inside the profile, to find the username.
+     * What this will return is what in the `index.html` file that will be find in the `name` variable that later will be useful to get the name of the specific user.
+ * I have also played about the making up names and different variable names to see what is connected inside between the `html` file and the `python` files. I learned that we can identify the variable as any variable, but in this case, we have to direct the template that we are currently in to help us go through the flow.
+ * Regarding to the syntax errors, it is very significant that we don't need `;` but for some parts, we need semi colons, instead of curly brackets as we learn from the `java`
+ <br>
+ <br>
+
+ **A HA Moments**: A A-Ha moment that I = have discovered in this round of tinkering is how when we what to pass in the data value from `Python` to `HTML` we can set them a `div` and use `{{variableName}}` to help us understand what we will be passing in. Make sure that when we pass in these types of datas, we should have to send in the data through the use of `{{}}` and not just one. But also, I have learned that when we want to pass into the data, it doesn't have to be tagged in the one data type, but instead, we should have it tagged where ever you want this name to be
+ ```python
+   <h1>Hello {{name}}</h1>
+ ```
+ **Try Next:** I have tried to follow every step of the tutorial. But next step, I would like to continuing finish watching this tutorial and learn how I can use this to help me code my webpage that I have been learning such as importing images and many more. At the same time, I will also help Angela in drawing the characters that we have been designing for our games later on in the project.
+
+### 3/4/2024 - 3/10/2024
+ * [Jinja templates](https://jinja.palletsprojects.com/en/3.1.x/templates/)
+ *  [DJango templates](https://docs.djangoproject.com/en/5.0/ref/templates/language/)
+ * [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
+ * Last week, I have talked with Mr. Mueller about deep diving inside on how I can use the code that I have so far to help me build a my webpage or how can I coorperate how I can coorporate my project into our topic. In this case, Mr. Mueller have helped through the way that I can `research the templates` that are provided for us. In this case, we have learned about the three different Platforms based on what Mr. Mueller had recommended me on.
+ * All these platforms are all web frameworks in Python that we can use to help us build a webpage through the use of Python language.
+ * `Flask`
+   * In this case, this is a base layout of the application. In this page, can have a title page, a headers page, log out page corporated for the page.
+   * This template is directly imported in the `template` file.
+   *
+   ```python
+   <!doctype html>
+    <title>{% block title %}{% endblock %} - Flaskr</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <nav>
+      <h1>Flaskr</h1>
+      <ul>
+        {% if g.user %}
+          <li><span>{{ g.user['username'] }}</span>
+          <li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+        {% else %}
+          <li><a href="{{ url_for('auth.register') }}">Register</a>
+          <li><a href="{{ url_for('auth.login') }}">Log In</a>
+        {% endif %}
+      </ul>
+    </nav>
+    <section class="content">
+      <header>
+        {% block header %}{% endblock %}
+      </header>
+      {% for message in get_flashed_messages() %}
+        <div class="flash">{{ message }}</div>
+      {% endfor %}
+      {% block content %}{% endblock %}
+    </section>
+   ```
+
+ * I haved learned that the g.username is an automatic value inside the flask
+   * In this case, when the user is logged in, it can be a log-in link or a logout link that can be displayed.
+   * In this case, we have a header, a a title and a content.
+   * This can be useful in a way that everytime there is a new user, we will have this page created.
+   * At the same time, we can also have a register and a login page template that I will look into later.
+ * `Jinja`
+   * Jinga behaves the most similar with Python.
+   * Jinja's syntax is from the static data in the template
+   * Any syntax value between the `{{ }}` is an expression that will be output to the fianl document
+   * For all the `{% %}` denotes a control flow in common to the `if` and `for`.
+     * `{% ... %}` for Statements
+     * `{{ ... }}` for Expressions to print to the template output
+     * `{# ... #}` for Comments
+       * such as in Java, we have `//` and in Python, we have `#` as our Python comment
+     * `{% if True %}` --> similar to `if`
+       * `{% end if %}` --> similar to else (if this statement is true and the statement ends)
+ * `DJango`
+   * Will be best for a webpage API.
+   * In the templates, we have a text file, and that in this template, it will contain variables that will later get evaluated and that also includes the logic of the template
+   * `{{ variable }}`
+     * can contain alphabets and characters and underscore
+     * no spaces and no underscore and may also not be a number.
+   * In DJango, when we use the `.` inside the varubale name , it means that it will repalce the `title` attribute with the section object.
+     * This will be a replacement
+     * similar to entering a object and a method.
+   * when we have `|`, we can also select a value to add design to it such as fonts, linkbreaks, how to join words and methods that we can change the group of words in the output.
+
+**A-HA MOMENTS**: I have learned that based on these templates (Flask) is that no matter how you want your templates to be viewed in your server, you won't be able to preview it, and this is because when we are calling `rendering_templates()` function, we aren't temporarily inside the directory `flask` package. Instead of the HTML structure in each template, it will extend the base template and overrride specific sections. Since we have the templated file inside the file, we have also use the file to make multiple templates, as a way that we can use multiple sub-classes, for one simgle class.
+<br>
+
+**Next Step**: I will continuing tinker with these tools to help me find out which tool can be the best for me in this case. But also, I will start building out the base MVP with Python, and later cooperating harder platforms into my project. I will also watch tutorials and continuing with templates from Replit. At the same time, I will also be uploading sprites with my partner, Angela, to follow the MVP plan.
+
+### 3/19/2024 - 3/24/2024
+ * [Django Template 2](https://www.w3schools.com/django/django_templates.php)
+ * Django tinkering file `linked inside the tool folder`
+ * [Django video](https://www.youtube.com/watch?v=ZNrlc6TPcrU)
+ * This week, I haven't done a lot, but I have doen a few steps that helped me throughout building my MVP.
+ * Before in the past, I started tinkering and building out my project inside replit from scratch, but now, I have watched more tutorials that have helped my installing from GitHub. I am currently following the tutorial and following the steps that comes to building this project. I have created one file called the `tinker.html` and `tinker-django.py`.
+ * Inside the html code, I have learned that how you would want your project to printed out and how you would want your `html` page want to look like. Therefore, inside my `html` page, I have include a heading `<h1>` and also a `<p>`.
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Hello World! My name is Jessica</h1>
+<p>This is tinkering for my freedom project</p>
+</body>
+</html>
+```
+ * At the same time, I have also learned in importing the dataset thorugh the use of the python file. The purpose of this file is to generate what is currently in the HTML to help us print and show through the python file.
+```python
+from django.http import HttpResponse
+from django.template import loader
+
+def members(request):
+  template = loader.get_template('myfirst.html')
+  return HttpResponse(template.render())
+```
+ * As mentioned before, when we `.get_template('myfirst.html')`, we can grab what is inside the html file page and print it out.
+ * After learning all the different Django codes, we have followed up with building our MVP. In this case, me and Angela have been drawing out our sprites. At the same time, we have also been importing the background sprites.
+ * Such as what we have learned in SEP 10, we have also drawn a wireframe that has helped us build our project even much more easier.
+ * We each have started building our own folder in the same repo that has helped us think through the thought process, and we have started importing some code one each of our end
+   * In this process, we have also thinking about how we can connect the project together
+   * This was one of our biggest decisions over here because it was difficult that we have two different coding languages. So it was pretty difficult.
+
+**A-HA MOMENTS**: Similar to what I have learned before from Flask, in these templates, I have learned that for all datatypes to be printed from the webpage for us to view, I have learned that we must have to print out the code through creating the route for HTML. This route will travel though the different types of data inside the `py` file and grab the information and continue the route or later on when we would want to print, it will just come out inside the viewing page. Overall, this week, I haven't done a lot, but I have tried my best to continue my project.
+<br>
+
+**Next Step**: Further on later in the project, it would be best to continuing collaborating with my partner, Angela. We have already finished drawing all the sprites for our game later on. At the same time, we have been importing all of our sprites inside our folder incide the `freedom-project` repo. After that, Angela and I have seperated off to continue our project on our own. I would love to found out how I can view my outputs after using Django and become more familiar with it. After that, i would love to find out how we can also apply `styles.css` into my webpage to make it look more visually appealing. At the same time, since Grace and Vivian are also using teh sam  tool to me, I believe that it would be best to as them for some tips and asking for some help.
+
+ <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
 * Challenges, a-ha moments, etc
