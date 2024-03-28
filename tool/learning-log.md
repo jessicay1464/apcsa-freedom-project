@@ -392,6 +392,43 @@ def members(request):
 
 **Next Step**: Further on later in the project, it would be best to continuing collaborating with my partner, Angela. We have already finished drawing all the sprites for our game later on. At the same time, we have been importing all of our sprites inside our folder incide the `freedom-project` repo. After that, Angela and I have seperated off to continue our project on our own. I would love to found out how I can view my outputs after using Django and become more familiar with it. After that, i would love to find out how we can also apply `styles.css` into my webpage to make it look more visually appealing. At the same time, since Grace and Vivian are also using teh sam  tool to me, I believe that it would be best to as them for some tips and asking for some help.
 
+### 3/25/2024 - 4/2/2024
+ * [Django video](https://www.youtube.com/watch?v=ZNrlc6TPcrU)
+ * [Django Template 2](https://www.w3schools.com/django/django_templates.php)
+ * Django tinkering file `linked inside the tool folder`
+ * In the video, I have watched how
+```python
+from django.shortcuts import render 
+
+def posts_list(request):
+  return render(request,'')
+```
+ * In this case I have learned that when we are using `request` it directs to what you want to view in your output directory. This will take a long time, but it will actually help you find what you need and help you print out what you have imported in the html page later on in the `index.html` page.
+ * `!` a shortcut from the VS Code that helps us become and have the code that we have the automatic templates for our coding language. 
+ * Also, while watching the video, I learned the use of `DJango.urls`. 
+   * I haven't included this with the `django-tinkering.py` with my file and I will be continuing that next week
+```py
+from django.urls import path
+from . import views
+
+urlpatterns = {
+  path('admin/', admin.site.urls),
+  path('', views.homepage),
+  path('about/', views.about)
+}
+```
+ * In this case, we are storing the different paths from the variable called `urlpatterns`
+ * To add on on what I have said before in the code, it is very important that we MUST have the first two lines of codes above as shown.
+ * Based on what Mr.Gray had said inside the video, these help runs the server and at the same time grabs the data value points.
+ * Helps you get the data from the post-directory.
+ * We don't really need the `path('admin/', admin.site.urls),` and `path('about/', views.about)` because we jsut need the middle line of code because it helps get the empty string and transfer it to the `views` page later on in the webpage.
+
+
+**A-HA MOMENTS**: In this part of the code learning, I have learned about the different function and parameters as I compare them to what I have learned before in Flask a couple weeks ago. I have talked about how in Flask, there are `route` that helps us understand how this library is traveling through different folders and grabbing the element that you want throughout every route that you import, however, in Django, instead of using `route` as shown in Flask, it is actually where you `request` for which file you want and grabs it from the `html` page. For this we can conclude that for `request`, there is less code that we as the programmer has to write, but also there are more backends that is happening behind this algorithm. 
+<br>
+
+**Next Step**: When stating next steps, it would be best to continuing collaborating with my partner, Angela. We have separate the work equally and we are working on our own part inside the repo and following all the steps that are going on inside the MVP planning with our work. At the same time, we have been importing all of our sprites inside our folder incide the `freedom-project` repo. Continuing from last week, I would love to find out how I can also apply `styles.css` into my webpage to make it look more visually appealing. By learning the different routes that the code goes through is much more easier for me later on in the project to learn what can be choose to change and what parts that I can select and learn to help me build my project. Maybe I also would love to watch another video link to help me visually see the difference of the different programmers that uses DJango. A part that I would have also spent more time was to show what I don't know, or didn't tinker from this week as what I have listed above.
+
  <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
