@@ -423,11 +423,43 @@ urlpatterns = {
  * Helps you get the data from the post-directory.
  * We don't really need the `path('admin/', admin.site.urls),` and `path('about/', views.about)` because we jsut need the middle line of code because it helps get the empty string and transfer it to the `views` page later on in the webpage.
 
-
 **A-HA MOMENTS**: In this part of the code learning, I have learned about the different function and parameters as I compare them to what I have learned before in Flask a couple weeks ago. I have talked about how in Flask, there are `route` that helps us understand how this library is traveling through different folders and grabbing the element that you want throughout every route that you import, however, in Django, instead of using `route` as shown in Flask, it is actually where you `request` for which file you want and grabs it from the `html` page. For this we can conclude that for `request`, there is less code that we as the programmer has to write, but also there are more backends that is happening behind this algorithm. 
 <br>
 
 **Next Step**: When stating next steps, it would be best to continuing collaborating with my partner, Angela. We have separate the work equally and we are working on our own part inside the repo and following all the steps that are going on inside the MVP planning with our work. At the same time, we have been importing all of our sprites inside our folder incide the `freedom-project` repo. Continuing from last week, I would love to find out how I can also apply `styles.css` into my webpage to make it look more visually appealing. By learning the different routes that the code goes through is much more easier for me later on in the project to learn what can be choose to change and what parts that I can select and learn to help me build my project. Maybe I also would love to watch another video link to help me visually see the difference of the different programmers that uses DJango. A part that I would have also spent more time was to show what I don't know, or didn't tinker from this week as what I have listed above.
+
+### 4/1/2024 - 4/8/2024
+ * [DJANGO](https://www.w3schools.com/django/django_insert_data.php)
+ * [DJANGO TEMPLATES](https://www.w3schools.com/django/django_templates.php)
+ * Following up to what I have last week, I have finidhed looking through the DJANGO templates that I have been looking through last week and a little bit this week
+   * The purpose of having this be the case is because that I leanred how and what the code looks like, but the main case is how learning, doesn't mean that I have understand it, therefore, I look through the code and thinking about the different output that it creates, as I am tinkering with my tool,`PYTHON DJANGO`.
+```python
+def members(request):
+  template = loader.get_template('myfirst.html')
+  return HttpResponse(template.render())
+```
+ * As I am looking through this code more carefully, I have been thinking that we have all the different code and what are the each code standing for and what does it mean. 
+ * So, as I was looking though this code, I saw that `template` is still `template`. This means that it is a variable named `template`. This is also connecting to what I have learned before because in the past, I learned that in python`, it is not a requirement to when declaring a data type when creating a variable. 
+ * I am also wondering that "What is the difference between `load` and `render()`. Considering there format, and what I will explain this in plain english, I have learned that it is significant that we need to use `load` when we want to get a data from another file and another folder, but when we are using that data and running that data in the case, we will be need to using render to help us run the data that the `load` is doing.
+ * Not only that I have learned the code for Python for their backend code, but in some cases, I can learn python to help us learn the different code to help us connect it to what I have learned in SEP10, where theres this connection to HTML.
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+    <p>Phone: {{ mymember.id }}</p>
+    <p>Member since: {{ mymember.joined_date }}</p>
+    <p>Back to <a href="/members">Members</a></p>
+  </body>
+</html>
+```
+ * In this exmaple above, this is where we can transfer DJANGO into our html code.
+ * As we can see, there are tags that are created that are in the coding language of HTML, but later on, we actually seeing that these are created from the data from the coding language of python, but are imported into html that can be very helpful in a way that we have the inputed data from python, and then tag it inside the HTML tag through the use of `{{ varName }}`.
+ * When wanting to input two data types into one tag for html, as shown that we have the `firstname` and the `lastname`, but we can just separate the two using the space control. 
+
+ * **A-HA MOMENTS**: An A-Ha moment that I have gather while in this process of tinkering and learning the code will be how not only that we must have to write some HTML and CSS at the same time, but also we can be able to write inside the code in the python file, but also, we can have the files inside the html files and inside there, we can have the code to be directly imported in the HTML FILE. This can be significant because similar to `HTML, CSS, and JAVA SCRIPT`, all can just be imported in HTML. Similar to a tree that is HTML, is the trunk, and later on is the other programming languages that can be later used to be dircetly use inside as if they are the little branches.  
+
+ * **Next Step**: The next steps that I will focus on while tinkering is focusing on the DJango side of the code to create this connection between the `python` and the `html and css` part of the code. This is because my main code is still Python. This can be a great way to help me learn my code and mainly my tool. I am also planning to have my code to be inside the page and only one page. This is because while learning my code, and planning out my project, it is very difficult that when we are learning our code, we are now thinking what will be best for the users. But also, the same think today I have learned to use variables from Python, I would also want to use them in my project too.
 
  <!--
 * Links you used today (websites, videos, etc)
