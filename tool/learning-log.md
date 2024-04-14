@@ -468,3 +468,41 @@ def members(request):
 * Questions you still have
 * What you're going to try next
 -->
+
+### 4/8/2024 - 4/14/2024
+ * [DJANGO EXAMPLES and templates](https://www.w3schools.com/django/django_prepare_template.php)
+ * During this week of tinkering, I have look through some example from w3schools and see how I can corporate them into my game with my partner Angela. And we didn't change our minds a lot, but we  followed the same idea, but instead of the menu, I have continued with the instructions page. This has become one of the most helpful ways to help me learn my code that I am about to learn right now and also creating a project out of it.
+ * From this example, I learned how I can corporate the names of the character into my list, but at the same time, I have learned how I make and `<ul>`list and that list can also be printed or any `html` syntax. This can help us organized our code in a much more easier way. Also, based on what I have tinkered this week, I have learned to completely make the connections between Django.
+ * In this case, I have learned to create the file named `tinker.html` and inside, I have started to plan out what my instructions will be for the game. 
+ * The code below is inside body (just for notification).
+```html
+<h1>Members</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }} {{ x.lastname }}</li>
+  {% endfor %}
+</ul>
+```
+ * I want to make an correction is how I iave said that `{{ }}` is the brackets for DJango, however, I have made an mistake that it is not just `{{% %}}`. This is when we used in the beginning and the end of the for loop when we are iterating through a list of items and is also known as an array.
+ * They are known as the DJango tags, and that they are telling Django to perform some programming logic inside those brackets.
+ * When we want to run the server to help and navagating to the folder, we can execute this command 
+```
+py manage.py runserver
+# and inside the browser, we can type in 127.0.0.1:8000/members/
+```
+```python
+def names(request):
+  mynames = Names.objects.all().values()
+  template = loader.get_template('all_names.html')
+  context = {
+    'mynames': mynames,
+  }
+  return HttpResponse(template.render(context, request))
+```
+ * It can be most useful to get the template as a variable and then use to load the server to get the template and get the HTML page and to save it inside the variable named `templates`.
+ * `Member` model is the same as a class. 
+
+ * **A-HA MOMENT**: An A-HA moment is when I went back to look at an exmaple, and when I was looking at back at the code, it made me have an idea that I needed to learn more. I have learn more about the tag and that what was actually inside the code. In the template that I have reviewed last week, I haven't looked closely of what each syntax means, but at the same time, when I am also learning on the exmaples link, it makes me have a description that has helped me understand the code that is much more helpful. This has also helped me concluded the significance of having examples as a way to help us learn since examples are also a great way to help us learn code.
+
+ * **Next Steps**: When I am thinking about the different code that is written to help us learn the code, it has made me realize the when I am creating the project, how can I use CSS. Next week, I will choose the color code and apply CSS to make the basic style for the `html` file Therefore, it would be best if I did some research and apply it into our project. I will also continue to communicate with Angela to continue our project and also, we can give each other person some suggestions on how we can help each other to help us change and get the first rounds of feedback. This can help us later understand what we might need to change or even add inside our project and topic. 
