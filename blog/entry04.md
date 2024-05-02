@@ -2,8 +2,8 @@
 ##### 3/11/24
 
 ### How have I been learning my tool?
- * In these few weeks of tinkering, I some sort of overcome an issue. I have been learning abotu both Flask and DJango and learned all the backends of the topic, but I found out that it was very difficult to create and build a product with only Flask and DJango, therefore, I asked Mr. Mueller to give me some advice and he told me to look through the templates from `DJango`, `Flask`, and last but not least,`Jinja`. `Jinja` was actually really new to me.
- * But before that, I have did some Flask tinkering too, in the replit page, and is linked below in the source. In this case, I followed the tutorial and continued my coding from last week. Below is the code in the for creating the different routes such as in a repo, we have different folders and files that we go through.
+ * In these few weeks of tinkering, I some sort of overcome an issue. I have been watching the [python web tutorial](https://youtu.be/kng-mJJby8g?si=hR6tSHfeDS22fvKg). Also, I have been learning abotu both Flask and DJango and learned all the backends of the topic, but I found out that it was very difficult to create and build a product with only Flask and DJango, therefore, I asked Mr. Mueller to give me some advice and he told me to look through the templates from `DJango`, `Flask`, and last but not least,`Jinja`. `Jinja` was actually really new to me.
+ * But before that, I have did some Flask tinkering too, in the [replit tinkering](https://replit.com/@jessicay1464/CleanAuthenticCryptos), and is linked below in the source. In this case, I followed the tutorial and continued my coding from last week. Below is the code in the for creating the different routes such as in a repo, we have different folders and files that we go through.
    * `/` is similar to `and` and also saying to `go to the next one`. At the same time, I learned that `__name__` is the first arguement that you pass in to blueprint in order to send. Also, you must have the the `__name__` before or else the `blueprint` will not be found and that there will be an error.
 ```python
 from flask import Blueprint
@@ -24,6 +24,7 @@ def home():
  * Last week, I have talked with Mr. Mueller about deep diving inside on how I can use the code that I have so far to help me build a my webpage or how can I coorperate how I can coorporate my project into our topic. In this case, Mr. Mueller have helped through the way that I can `research the templates` that are provided for us. In this case, we have learned about the three different Platforms based on what Mr. Mueller had recommended me on. 
  * All these platforms are all web frameworks in Python that we can use to help us build a webpage through the use of Python language.
 #### `Flask`
+  * The source that I have been using is [Flask Templates](https://flask.palletsprojects.com/en/2.3.x/tutorial/templates/)
    * In this case, this is a base layout of the application. In this page, can have a title page, a headers page, log out page corporated for the page.
    * This template is directly imported in the `template` file. 
    * 
@@ -51,7 +52,7 @@ def home():
  * I haved learned that the `g.username` is an automatic value inside the flask 
    * In this case, when the user is logged in, it can be a log-in link or a logout link that can be displayed. When we have a header, a title and a content. This can be useful in a way that everytime there is a new user, we will have this page created. We can also have a register and a login page template that I will look into later.
 #### `Jinja`
-   * Jinga behaves the most similar with Python. To add on, Jinja's syntax is from the static data in the template
+   * Jinga behaves the most similar with Python. To add on, Jinja's syntax is from the static data in the [template](https://jinja.palletsprojects.com/en/3.1.x/templates/)
    * Any syntax value between the `{{ }}` is an expression that will be output to the fianl document
    * For all the `{% %}` denotes a control flow in common to the `if` and `for`. 
      * `{% ... %}` for Statements
@@ -60,8 +61,9 @@ def home():
        * such as in Java, we have `//` and in Python, we have `#` as our Python comment
      * `{% if True %}` --> similar to `if`
        * `{% end if %}` --> similar to else (if this statement is true and the statement ends)
+
  #### `DJango`
-   * Will be best for a webpage API.
+   * Will be best for a webpage API based on the template [DJango templates](https://docs.djangoproject.com/en/5.0/ref/templates/language/).
    * In the templates, we have a text file, and that in this template, it will contain variables that will later get evaluated and that also includes the logic of the template
    * `{{ variable }}`
      * can contain alphabets and characters and underscore
