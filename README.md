@@ -8,9 +8,9 @@ For my project, I chose to independently study **X** in order to help me make **
 
 ## Links
 
-[Product]()
+[Product](https://angelal4844.github.io/freedom-project12/game/index.html)
 
-[Presentation]()
+[Presentation](https://docs.google.com/presentation/d/1bWoBVTljULZRjypllHZgcgjU5t5yvtg8WGTndqvGTg4/edit?usp=sharing)
 
 ## Implications
 ##### PROS
